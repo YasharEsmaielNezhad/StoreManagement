@@ -74,7 +74,7 @@ class Ui_MainMenu(object):
         self.label_5.setGeometry(QtCore.QRect(350, 210, 141, 121))
         self.label_5.setStyleSheet("color: rgb(255, 255, 0);")
         self.label_5.setText("")
-        self.label_5.setPixmap(QtGui.QPixmap("c:\\Users\\CFP\\Desktop\\Coding\\Project\\StoreManagement\\../Images-Icons/product.png"))
+        self.label_5.setPixmap(QtGui.QPixmap("./Images-Icons/product.png"))
         self.label_5.setScaledContents(True)
         self.label_5.setObjectName("label_5")
         self.PmPB = QtWidgets.QCommandLinkButton(parent=self.centralwidget)
