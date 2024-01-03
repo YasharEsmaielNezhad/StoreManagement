@@ -10,10 +10,6 @@ from ALISELES import *
 
 
 
-def loginfunction(self):
-    username= self.UnBox.Text()
-    password= self.passbox.Text()
-    print("Successfully signed in!!")
     
 
 def switchWindows(mainWin, mainWin2):
@@ -58,7 +54,7 @@ SmWin.setupUi(Salesmanagemnt)
 
 loginPage.show()
 
-MmWin.commandLinkButton.clicked.connect(lambda:switchWindows(loginPage,MainMenu))
+MmWin.LoginButton.clicked.connect(lambda:switchWindows(loginPage,MainMenu))
 PmWin.PmPB.clicked.connect(lambda:switchWindows(MainMenu,salesmainpage))
 
 Smpage.back.clicked.connect(lambda:switchWindows(salesmainpage,MainMenu))
