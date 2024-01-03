@@ -55,6 +55,7 @@ class Ui_LoginPage(object):
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap("./Images-Icons/icons8-login-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         self.LoginButton.setIcon(icon1)
         self.LoginButton.setIconSize(QtCore.QSize(55, 55))
         self.LoginButton.setObjectName("LoginButton")
@@ -73,6 +74,8 @@ class Ui_LoginPage(object):
         self.ErrorLabel.setText("")
         self.ErrorLabel.setObjectName("ErrorLabel")
 =======
+=======
+>>>>>>> Stashed changes
         self.commandLinkButton.setIcon(icon1)
         self.commandLinkButton.setIconSize(QtCore.QSize(55, 55))
         self.commandLinkButton.setObjectName("commandLinkButton")
@@ -92,8 +95,11 @@ class Ui_LoginPage(object):
     def retranslateUi(self, LoginPage):
         _translate = QtCore.QCoreApplication.translate
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         LoginPage.setWindowTitle(_translate("LoginPage", "LoginPage"))
 =======
+=======
+>>>>>>> Stashed changes
         LoginPage.setWindowTitle(_translate("LoginPage", "Loginpage"))
         self.UnBox.setHtml(_translate("LoginPage", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
