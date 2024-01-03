@@ -1,158 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainMenu</class>
- <widget class="QMainWindow" name="MainMenu">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>566</width>
     <height>600</height>
    </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../StoreManagement/Images-Icons/icons8-create-order-90.png</normaloff>../StoreManagement/Images-Icons/icons8-create-order-90.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(54, 54, 54);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QListView" name="listView">
+   <widget class="QLabel" name="ChoosingLabel">
     <property name="geometry">
      <rect>
-      <x>-30</x>
-      <y>-30</y>
-      <width>621</width>
-      <height>601</height>
-     </rect>
-    </property>
-    <property name="cursor" stdset="0">
-     <cursorShape>ArrowCursor</cursorShape>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="SmPB">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>160</y>
-      <width>151</width>
-      <height>91</height>
+      <x>40</x>
+      <y>50</y>
+      <width>471</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>10</pointsize>
-      <italic>true</italic>
+      <family>Georgia</family>
+      <pointsize>18</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>SalesManagemnt</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#bfbf8e;&quot;&gt;Choose From Categories Below to Continue.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="PmPB">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>160</y>
-      <width>151</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <italic>true</italic>
-     </font>
-    </property>
-    <property name="text">
-     <string>ProductsManagement</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="PermPB">
+   <widget class="QCommandLinkButton" name="SmPB">
     <property name="geometry">
      <rect>
       <x>230</x>
-      <y>160</y>
-      <width>151</width>
-      <height>91</height>
+      <y>80</y>
+      <width>111</width>
+      <height>121</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-      <italic>true</italic>
-     </font>
-    </property>
     <property name="text">
-     <string>PersonnelManagement</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../Images-Icons/icons8-management-100.png</normaloff>../Images-Icons/icons8-management-100.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>200</width>
+      <height>200</height>
+     </size>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="SalesManagementLabel">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>50</y>
-      <width>131</width>
-      <height>51</height>
+      <x>200</x>
+      <y>190</y>
+      <width>181</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Rockwell Condensed</family>
-      <pointsize>28</pointsize>
+      <family>Mongolian Baiti</family>
      </font>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="lineWidth">
-     <number>3</number>
-    </property>
-    <property name="midLineWidth">
-     <number>3</number>
-    </property>
     <property name="text">
-     <string>MainMenu</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; color:#bebe8e;&quot;&gt;Sales Management&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QCommandLinkButton" name="PmPB">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>110</y>
-      <width>371</width>
-      <height>20</height>
+      <x>230</x>
+      <y>240</y>
+      <width>111</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../StoreManagement/Images-Icons/icons8-paid-bill-100.png</normaloff>../StoreManagement/Images-Icons/icons8-paid-bill-100.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ProductManagementLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>350</y>
+      <width>211</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
+      <family>Mongolian Baiti</family>
      </font>
     </property>
     <property name="text">
-     <string>Please select from the Options Below to continue</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; color:#bebe8e;&quot;&gt;Product Management&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="BackButton">
+   <widget class="QLabel" name="PersonnelManagementLabel">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>510</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Mongolian Baiti</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; color:#bebe8e;&quot;&gt;Personnel Management&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="PermPB">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>400</y>
+      <width>111</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../StoreManagement/Images-Icons/icons8-management-100.png</normaloff>../StoreManagement/Images-Icons/icons8-management-100.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="BackButton">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>75</width>
-      <height>24</height>
+      <width>61</width>
+      <height>61</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
     <property name="text">
-     <string>Back</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../StoreManagement/Images-Icons/icons8-back-arrow-100.png</normaloff>../StoreManagement/Images-Icons/icons8-back-arrow-100.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>43</width>
+      <height>43</height>
+     </size>
     </property>
    </widget>
   </widget>
@@ -161,13 +201,16 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>566</width>
      <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="qt.qrc"/>
+  <include location="qtt.qrc"/>
+ </resources>
  <connections/>
 </ui>
