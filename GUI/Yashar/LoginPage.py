@@ -44,7 +44,7 @@ class Ui_LoginPage(object):
         self.label.setGeometry(QtCore.QRect(110, 60, 151, 131))
         self.label.setFrameShape(QtWidgets.QFrame.Shape.NoFrame)
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("./Images-Icons/icons8-user-100.png"))
+        self.label.setPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-user-100.png"))
         self.label.setScaledContents(True)
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
@@ -53,9 +53,7 @@ class Ui_LoginPage(object):
         self.LoginButton.setStyleSheet("")
         self.LoginButton.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("./Images-Icons/icons8-login-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+        icon1.addPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-login-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.LoginButton.setIcon(icon1)
         self.LoginButton.setIconSize(QtCore.QSize(55, 55))
         self.LoginButton.setObjectName("LoginButton")
@@ -73,13 +71,6 @@ class Ui_LoginPage(object):
         self.ErrorLabel.setGeometry(QtCore.QRect(118, 40, 141, 20))
         self.ErrorLabel.setText("")
         self.ErrorLabel.setObjectName("ErrorLabel")
-=======
-=======
->>>>>>> Stashed changes
-        self.commandLinkButton.setIcon(icon1)
-        self.commandLinkButton.setIconSize(QtCore.QSize(55, 55))
-        self.commandLinkButton.setObjectName("commandLinkButton")
->>>>>>> Stashed changes
         LoginPage.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=LoginPage)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 371, 22))
@@ -94,39 +85,6 @@ class Ui_LoginPage(object):
 
     def retranslateUi(self, LoginPage):
         _translate = QtCore.QCoreApplication.translate
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        LoginPage.setWindowTitle(_translate("LoginPage", "LoginPage"))
-=======
-=======
->>>>>>> Stashed changes
-        LoginPage.setWindowTitle(_translate("LoginPage", "Loginpage"))
-        self.UnBox.setHtml(_translate("LoginPage", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Segoe UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.passBox.setHtml(_translate("LoginPage", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Segoe UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
->>>>>>> Stashed changes
+        LoginPage.setWindowTitle(_translate("LoginPage", "StoreManagement"))
         self.labelUn.setText(_translate("LoginPage", "<html><head/><body><p align=\"center\">Username</p></body></html>"))
         self.labelPass.setText(_translate("LoginPage", "<html><head/><body><p align=\"center\">Password</p></body></html>"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    LoginPage = QtWidgets.QMainWindow()
-    ui = Ui_LoginPage()
-    ui.setupUi(LoginPage)
-    LoginPage.show()
-    sys.exit(app.exec())

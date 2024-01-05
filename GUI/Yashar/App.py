@@ -54,7 +54,7 @@ SmWin.setupUi(Salesmanagemnt)
 
 loginPage.show()
 
-MmWin.LoginButton.clicked.connect(lambda:switchWindows(loginPage,MainMenu))
+MmWin.commandLinkButton.clicked.connect(lambda:switchWindows(loginPage,MainMenu))
 PmWin.PmPB.clicked.connect(lambda:switchWindows(MainMenu,salesmainpage))
 
 Smpage.back.clicked.connect(lambda:switchWindows(salesmainpage,MainMenu))
