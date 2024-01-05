@@ -7,7 +7,7 @@ from QTmainpage import *
 from ALIINVENTORY import *
 from ALIPURCHASE import *
 from ALISELES import *
-
+from Class.Login import *
 
 
     
@@ -51,10 +51,12 @@ Smpage.setupUi(salesmainpage)
 PmWin.setupUi(MainMenu)
 MmWin.setupUi(loginPage)
 SmWin.setupUi(Salesmanagemnt)
+loginObj=Login(MmWin)
+
 
 loginPage.show()
 
-MmWin.commandLinkButton.clicked.connect(lambda:switchWindows(loginPage,MainMenu))
+MmWin.LoginButton.clicked.connect(lambda:loginObj.doLogin(loginPage,MainMenu,PmWin))
 PmWin.PmPB.clicked.connect(lambda:switchWindows(MainMenu,salesmainpage))
 
 Smpage.back.clicked.connect(lambda:switchWindows(salesmainpage,MainMenu))

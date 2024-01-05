@@ -53,7 +53,7 @@ class Ui_LoginPage(object):
         self.LoginButton.setStyleSheet("")
         self.LoginButton.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-login-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("./Images-Icons/icons8-login-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.LoginButton.setIcon(icon1)
         self.LoginButton.setIconSize(QtCore.QSize(55, 55))
         self.LoginButton.setObjectName("LoginButton")
@@ -85,6 +85,6 @@ class Ui_LoginPage(object):
 
     def retranslateUi(self, LoginPage):
         _translate = QtCore.QCoreApplication.translate
-        LoginPage.setWindowTitle(_translate("LoginPage", "StoreManagement"))
+        LoginPage.setWindowTitle(_translate("LoginPage", "LoginPage"))
         self.labelUn.setText(_translate("LoginPage", "<html><head/><body><p align=\"center\">Username</p></body></html>"))
         self.labelPass.setText(_translate("LoginPage", "<html><head/><body><p align=\"center\">Password</p></body></html>"))
