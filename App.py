@@ -1,7 +1,5 @@
 import sys
 from PyQt6 import QtWidgets
-from pyqt6_tools import *
-from pyqt6_plugins import *
 from SalesManagement import *
 from LoginPage import *
 from MainMenu import *
