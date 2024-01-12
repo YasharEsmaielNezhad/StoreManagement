@@ -8,7 +8,7 @@ from ALIINVENTORY import *
 from ALIPURCHASE import *
 from ALISELES import *
 from Class.Login import *
-
+from store import *
 
     
 
@@ -33,11 +33,12 @@ INVENTORYp = QtWidgets.QMainWindow()
 selles = QtWidgets.QMainWindow()
 Purchasepage = QtWidgets.QMainWindow()
 salesmainpage = QtWidgets.QMainWindow()
-
+store = QtWidgets.QMainWindow()
 
 
 MmWin = Ui_LoginPage()
 PmWin = Ui_MainWindow()
+PerM = Ui_MainWindow3()
 SmWin = Ui_SalesManagement()
 Smpage = Ui_MainWindow2()
 invent = Ui_INVENTORY()
@@ -51,12 +52,17 @@ Smpage.setupUi(salesmainpage)
 PmWin.setupUi(MainMenu)
 MmWin.setupUi(loginPage)
 SmWin.setupUi(Salesmanagemnt)
+PerM.setupUi(store)
+
+
 loginObj=Login(MmWin)
 
 
 loginPage.show()
 
 MmWin.LoginButton.clicked.connect(lambda:loginObj.doLogin(loginPage,MainMenu,PmWin))
+
+PmWin.PermPB.clicked.connect(lambda:switchWindows(MainMenu,store))
 PmWin.PmPB.clicked.connect(lambda:switchWindows(MainMenu,salesmainpage))
 
 Smpage.back.clicked.connect(lambda:switchWindows(salesmainpage,MainMenu))

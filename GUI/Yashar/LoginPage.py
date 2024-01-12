@@ -44,7 +44,7 @@ class Ui_LoginPage(object):
         self.label.setGeometry(QtCore.QRect(110, 60, 151, 131))
         self.label.setFrameShape(QtWidgets.QFrame.Shape.NoFrame)
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-user-100.png"))
+        self.label.setPixmap(QtGui.QPixmap("./Images-Icons/icons8-user-100.png"))
         self.label.setScaledContents(True)
         self.label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.label.setObjectName("label")
