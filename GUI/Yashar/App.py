@@ -8,7 +8,7 @@ from ALIINVENTORY import *
 from ALIPURCHASE import *
 from ALISELES import *
 from Class.Login import *
-from store import *
+from storePersonalInfo import *
 
     
 
@@ -33,17 +33,17 @@ INVENTORYp = QtWidgets.QMainWindow()
 selles = QtWidgets.QMainWindow()
 Purchasepage = QtWidgets.QMainWindow()
 salesmainpage = QtWidgets.QMainWindow()
-store = QtWidgets.QMainWindow()
+store_personal_info = QtWidgets.QMainWindow()
 
 
 MmWin = Ui_LoginPage()
 PmWin = Ui_MainWindow()
-PerM = Ui_MainWindow3()
 SmWin = Ui_SalesManagement()
 Smpage = Ui_MainWindow2()
 invent = Ui_INVENTORY()
 sell = Ui_SELES()
 purch = Ui_PURCHASE()
+PerM = Ui_MainWindow3()
 
 invent.setupUi(INVENTORYp)
 sell.setupUi(selles)
@@ -52,7 +52,7 @@ Smpage.setupUi(salesmainpage)
 PmWin.setupUi(MainMenu)
 MmWin.setupUi(loginPage)
 SmWin.setupUi(Salesmanagemnt)
-PerM.setupUi(store)
+PerM.setupUi(store_personal_info)
 
 
 loginObj=Login(MmWin)
@@ -62,10 +62,11 @@ loginPage.show()
 
 MmWin.LoginButton.clicked.connect(lambda:loginObj.doLogin(loginPage,MainMenu,PmWin))
 
-PmWin.PermPB.clicked.connect(lambda:switchWindows(MainMenu,store))
+PmWin.PermPB.clicked.connect(lambda:switchWindows(MainMenu,store_personal_info))
 PmWin.PmPB.clicked.connect(lambda:switchWindows(MainMenu,salesmainpage))
 
 Smpage.back.clicked.connect(lambda:switchWindows(salesmainpage,MainMenu))
+PerM.backPB.clicked.connect(lambda:switchWindows(store_personal_info,MainMenu))
 
 
 Smpage.purchase.clicked.connect(lambda:switchWindows(salesmainpage,Purchasepage))
