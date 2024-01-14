@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'MainMenu.ui'
+# Form implementation generated from reading ui file 'c:\Users\venous\Desktop\for qt\StoreManagement\GUI\Yashar\pagha\MainMenu.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -15,7 +15,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(566, 600)
         MainWindow.setBaseSize(QtCore.QSize(1920, 1080))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-create-order-90.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("c:\\Users\\venous\\Desktop\\for qt\\StoreManagement\\GUI\\Yashar\\pagha\\../StoreManagement/Images-Icons/icons8-create-order-90.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("background-color: rgb(54, 54, 54);")
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
@@ -32,7 +32,7 @@ class Ui_MainWindow(object):
         self.SmPB.setGeometry(QtCore.QRect(230, 80, 111, 121))
         self.SmPB.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../Images-Icons/icons8-management-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("c:\\Users\\venous\\Desktop\\for qt\\StoreManagement\\GUI\\Yashar\\pagha\\../Images-Icons/icons8-management-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.SmPB.setIcon(icon1)
         self.SmPB.setIconSize(QtCore.QSize(200, 200))
         self.SmPB.setObjectName("SmPB")
@@ -46,7 +46,7 @@ class Ui_MainWindow(object):
         self.PmPB.setGeometry(QtCore.QRect(230, 240, 111, 121))
         self.PmPB.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-paid-bill-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("c:\\Users\\venous\\Desktop\\for qt\\StoreManagement\\GUI\\Yashar\\pagha\\../StoreManagement/Images-Icons/icons8-paid-bill-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.PmPB.setIcon(icon2)
         self.PmPB.setIconSize(QtCore.QSize(100, 100))
         self.PmPB.setObjectName("PmPB")
@@ -66,7 +66,7 @@ class Ui_MainWindow(object):
         self.PermPB.setGeometry(QtCore.QRect(230, 400, 111, 121))
         self.PermPB.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-management-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap("c:\\Users\\venous\\Desktop\\for qt\\StoreManagement\\GUI\\Yashar\\pagha\\../StoreManagement/Images-Icons/icons8-management-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.PermPB.setIcon(icon3)
         self.PermPB.setIconSize(QtCore.QSize(100, 100))
         self.PermPB.setObjectName("PermPB")
@@ -74,7 +74,7 @@ class Ui_MainWindow(object):
         self.BackButton.setGeometry(QtCore.QRect(0, 0, 61, 61))
         self.BackButton.setText("")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon4.addPixmap(QtGui.QPixmap("c:\\Users\\venous\\Desktop\\for qt\\StoreManagement\\GUI\\Yashar\\pagha\\../StoreManagement/Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.BackButton.setIcon(icon4)
         self.BackButton.setIconSize(QtCore.QSize(43, 43))
         self.BackButton.setObjectName("BackButton")
@@ -97,13 +97,3 @@ class Ui_MainWindow(object):
         self.SalesManagementLabel.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:16pt; font-weight:700; color:#bebe8e;\">Sales Management</span></p></body></html>"))
         self.ProductManagementLabel.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:16pt; font-weight:700; color:#bebe8e;\">Product Management</span></p></body></html>"))
         self.PersonnelManagementLabel.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:16pt; font-weight:700; color:#bebe8e;\">Personnel Management</span></p></body></html>"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec())

@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'c:\Users\CFP\Desktop\Coding\Project\StoreManagement\SalesManagement.ui'
+# Form implementation generated from reading ui file 'c:\Users\venous\Desktop\for qt\StoreManagement\GUI\Yashar\SalesManagement.ui'
 #
 # Created by: PyQt6 UI code generator 6.4.2
 #
@@ -85,7 +85,7 @@ class Ui_SalesManagement(object):
         self.AddButton.setGeometry(QtCore.QRect(445, 405, 51, 51))
         self.AddButton.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("c:\\Users\\CFP\\Desktop\\Coding\\Project\\StoreManagement\\../Images-Icons/icons8-add-60.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("c:\\Users\\venous\\Desktop\\for qt\\StoreManagement\\GUI\\Yashar\\../Images-Icons/icons8-add-60.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.AddButton.setIcon(icon)
         self.AddButton.setIconSize(QtCore.QSize(40, 40))
         self.AddButton.setObjectName("AddButton")
@@ -93,7 +93,7 @@ class Ui_SalesManagement(object):
         self.BackButton.setGeometry(QtCore.QRect(10, 0, 51, 51))
         self.BackButton.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("c:\\Users\\CFP\\Desktop\\Coding\\Project\\StoreManagement\\../StoreManagement/Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("c:\\Users\\venous\\Desktop\\for qt\\StoreManagement\\GUI\\Yashar\\../StoreManagement/Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.BackButton.setIcon(icon1)
         self.BackButton.setIconSize(QtCore.QSize(35, 35))
         self.BackButton.setObjectName("BackButton")

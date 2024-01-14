@@ -19,14 +19,20 @@ class datasaving:
             + str(hashpassw)
             + "')"
         )
+        self.sign.Erorlb.setText(" ")
+
+        
+        
 
     def signup(self):
+        self.sign.Erorlb.setText("  ")
         username = self.sign.usernameLE.text()
         password = self.sign.passwordLE.text()
         reppassword = self.sign.repeatPasswordLE.text()
-        print(username)
+        print(password)
+        self.sign.Erorlb.setText("  ")
         if password == reppassword:
             self.exportNN(username, password)
         #    print(hashlib.md5(password.encode('utf-8')).hexdigest())
         else:
-            print("11")
+            self.sign.Erorlb.setText("WRONG PASSWORD REPET")
