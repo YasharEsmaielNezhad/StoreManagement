@@ -1,12 +1,12 @@
 import sys
 from PyQt6 import QtWidgets
-from SalesManagement import *
-from LoginPage import *
-from MainMenu import *
-from QTmainpage import *
-from ALIINVENTORY import *
-from ALIPURCHASE import *
-from ALISELES import *
+from pagha.SalesManagement import *
+from pagha.LoginPage import *
+from pagha.MainMenu import *
+from pagha.QTmainpage import *
+from pagha.ALIINVENTORY import *
+from pagha.ALIPURCHASE import *
+from pagha.ALISELES import *
 from Class.Login import *
 from storePersonalInfo import *
 
