@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_SalesManagement(object):
     def setupUi(self, SalesManagement):
         SalesManagement.setObjectName("SalesManagement")
-        SalesManagement.resize(800, 600)
+        SalesManagement.resize(583, 600)
         self.centralwidget = QtWidgets.QWidget(parent=SalesManagement)
         self.centralwidget.setObjectName("centralwidget")
         self.listView = QtWidgets.QListView(parent=self.centralwidget)
@@ -22,14 +22,20 @@ class Ui_SalesManagement(object):
         self.listView.setAlternatingRowColors(True)
         self.listView.setObjectName("listView")
         self.TableWidget = QtWidgets.QTableWidget(parent=self.centralwidget)
-        self.TableWidget.setGeometry(QtCore.QRect(10, 50, 561, 330))
+        self.TableWidget.setGeometry(QtCore.QRect(10, 60, 561, 321))
         self.TableWidget.setMinimumSize(QtCore.QSize(561, 0))
-        self.TableWidget.setStyleSheet("background-color: rgb(0, 74, 109);\n"
-"background-color: rgb(0, 120, 175);")
+        self.TableWidget.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
+        self.TableWidget.setAutoFillBackground(True)
+        self.TableWidget.setStyleSheet("background-color: rgb(182, 182, 136);\n"
+"background-color: rgb(148, 148, 148);")
+        self.TableWidget.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        self.TableWidget.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.SizeAdjustPolicy.AdjustIgnored)
+        self.TableWidget.setAutoScroll(True)
         self.TableWidget.setObjectName("TableWidget")
         self.TableWidget.setColumnCount(4)
         self.TableWidget.setRowCount(0)
         item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignHCenter|QtCore.Qt.AlignmentFlag.AlignTop)
         font = QtGui.QFont()
         font.setFamily("Imprint MT Shadow")
         font.setPointSize(10)
@@ -56,6 +62,13 @@ class Ui_SalesManagement(object):
         font.setPointSize(10)
         item.setFont(font)
         self.TableWidget.setHorizontalHeaderItem(3, item)
+        self.TableWidget.horizontalHeader().setCascadingSectionResizes(True)
+        self.TableWidget.horizontalHeader().setDefaultSectionSize(150)
+        self.TableWidget.horizontalHeader().setSortIndicatorShown(True)
+        self.TableWidget.horizontalHeader().setStretchLastSection(True)
+        self.TableWidget.verticalHeader().setCascadingSectionResizes(True)
+        self.TableWidget.verticalHeader().setSortIndicatorShown(True)
+        self.TableWidget.verticalHeader().setStretchLastSection(True)
         self.SaleLineEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
         self.SaleLineEdit.setGeometry(QtCore.QRect(100, 420, 170, 30))
         self.SaleLineEdit.setStyleSheet("background-color: rgb(252, 252, 188);\n"
@@ -85,7 +98,7 @@ class Ui_SalesManagement(object):
         self.AddButton.setGeometry(QtCore.QRect(445, 405, 51, 51))
         self.AddButton.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("./Images-Icons/icons8-add-60.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("../Images-Icons/icons8-add-60.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.AddButton.setIcon(icon)
         self.AddButton.setIconSize(QtCore.QSize(40, 40))
         self.AddButton.setObjectName("AddButton")
@@ -93,13 +106,21 @@ class Ui_SalesManagement(object):
         self.BackButton.setGeometry(QtCore.QRect(10, 0, 51, 51))
         self.BackButton.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("./Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("../Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.BackButton.setIcon(icon1)
         self.BackButton.setIconSize(QtCore.QSize(35, 35))
         self.BackButton.setObjectName("BackButton")
+        self.UpdatePB = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.UpdatePB.setGeometry(QtCore.QRect(379, 450, 71, 24))
+        self.UpdatePB.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"font: 600 10pt \"Yu Gothic UI Semibold\";\n"
+"color: rgb(255, 255, 255);\n"
+"border:2px;\n"
+"border-radius:20px;")
+        self.UpdatePB.setObjectName("UpdatePB")
         SalesManagement.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=SalesManagement)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 583, 22))
         self.menubar.setObjectName("menubar")
         SalesManagement.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=SalesManagement)
@@ -115,7 +136,7 @@ class Ui_SalesManagement(object):
         item = self.TableWidget.horizontalHeaderItem(0)
         item.setText(_translate("SalesManagement", "SoldBill"))
         item = self.TableWidget.horizontalHeaderItem(1)
-        item.setText(_translate("SalesManagement", "BoughtBill"))
+        item.setText(_translate("SalesManagement", "PurchasedBill"))
         item = self.TableWidget.horizontalHeaderItem(2)
         item.setText(_translate("SalesManagement", "Update"))
         item = self.TableWidget.horizontalHeaderItem(3)
@@ -123,6 +144,7 @@ class Ui_SalesManagement(object):
         self.SaleLabel.setText(_translate("SalesManagement", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">SoldBill</span></p></body></html>"))
         self.BuyLabel.setText(_translate("SalesManagement", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">BoughtBill</span></p></body></html>"))
         self.SmLabel.setText(_translate("SalesManagement", "<html><head/><body><p align=\"center\"><span style=\" font-weight:700; color:#e2e2a8;\">Sales Management</span></p></body></html>"))
+        self.UpdatePB.setText(_translate("SalesManagement", "Update"))
 
 
 if __name__ == "__main__":

@@ -7,6 +7,7 @@ from pagha.QTmainpage import *
 from pagha.ALIINVENTORY import *
 from pagha.ALIPURCHASE import *
 from pagha.ALISELES import *
+from pagha.SalesManagementAdd import *
 from Class.Login import *
 from storePersonalInfo import *
 
@@ -19,6 +20,10 @@ def switchWindows(mainWin, mainWin2):
 def switchWindows1(mainWin, mainWin2):
     mainWin.hide()
     mainWin2.show()
+
+def switchSMPWindows(MainMenu,Salesmanagemnt,SalesManagementAdd):
+    switchWindows(MainMenu,Salesmanagemnt)
+    SalesManagementAdd.renderSales()
 
 
 
@@ -56,7 +61,7 @@ PerM.setupUi(store_personal_info)
 
 
 loginObj=Login(MmWin)
-
+AddObj=SalesManagementAdd(SmWin)
 
 loginPage.show()
 
@@ -85,8 +90,9 @@ Smpage.purchase.clicked.connect(lambda:switchWindows(salesmainpage,Purchasepage)
 
 purch.PurBackB.clicked.connect(lambda:switchWindows(Purchasepage,salesmainpage))
 
-PmWin.SmPB.clicked.connect(lambda:switchWindows(MainMenu,Salesmanagemnt))
+PmWin.SmPB.clicked.connect(lambda:switchSMPWindows(MainMenu,Salesmanagemnt,AddObj))
 SmWin.BackButton.clicked.connect(lambda:switchWindows(Salesmanagemnt,MainMenu))
+SmWin.AddButton.clicked.connect(lambda:AddObj.addProduct())
 PmWin.BackButton.clicked.connect(lambda:switchWindows(MainMenu,loginPage))
 
 
