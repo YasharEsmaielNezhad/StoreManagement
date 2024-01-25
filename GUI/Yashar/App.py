@@ -93,6 +93,7 @@ purch.PurBackB.clicked.connect(lambda:switchWindows(Purchasepage,salesmainpage))
 PmWin.SmPB.clicked.connect(lambda:switchSMPWindows(MainMenu,Salesmanagemnt,AddObj))
 SmWin.BackButton.clicked.connect(lambda:switchWindows(Salesmanagemnt,MainMenu))
 SmWin.AddButton.clicked.connect(lambda:AddObj.addProduct())
+SmWin.UpdatePB.clicked.connect(lambda:AddObj.updateProduct())
 PmWin.BackButton.clicked.connect(lambda:switchWindows(MainMenu,loginPage))
 
 

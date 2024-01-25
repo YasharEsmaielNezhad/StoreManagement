@@ -297,6 +297,30 @@ border-radius:20px;</string>
      <string>Update</string>
     </property>
    </widget>
+   <widget class="QLabel" name="HiddenVal">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>150</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>listView</zorder>
+   <zorder>SaleLineEdit</zorder>
+   <zorder>SaleLabel</zorder>
+   <zorder>BuyLabel</zorder>
+   <zorder>SmLabel</zorder>
+   <zorder>BuyLineEdit</zorder>
+   <zorder>AddButton</zorder>
+   <zorder>BackButton</zorder>
+   <zorder>UpdatePB</zorder>
+   <zorder>HiddenVal</zorder>
+   <zorder>TableWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

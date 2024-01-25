@@ -106,7 +106,7 @@ class Ui_SalesManagement(object):
         self.BackButton.setGeometry(QtCore.QRect(10, 0, 51, 51))
         self.BackButton.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.BackButton.setIcon(icon1)
         self.BackButton.setIconSize(QtCore.QSize(35, 35))
         self.BackButton.setObjectName("BackButton")
@@ -118,6 +118,20 @@ class Ui_SalesManagement(object):
 "border:2px;\n"
 "border-radius:20px;")
         self.UpdatePB.setObjectName("UpdatePB")
+        self.HiddenVal = QtWidgets.QLabel(parent=self.centralwidget)
+        self.HiddenVal.setGeometry(QtCore.QRect(340, 150, 49, 16))
+        self.HiddenVal.setObjectName("HiddenVal")
+        self.listView.raise_()
+        self.SaleLineEdit.raise_()
+        self.SaleLabel.raise_()
+        self.BuyLabel.raise_()
+        self.SmLabel.raise_()
+        self.BuyLineEdit.raise_()
+        self.AddButton.raise_()
+        self.BackButton.raise_()
+        self.UpdatePB.raise_()
+        self.HiddenVal.raise_()
+        self.TableWidget.raise_()
         SalesManagement.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=SalesManagement)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 583, 22))
@@ -145,6 +159,7 @@ class Ui_SalesManagement(object):
         self.BuyLabel.setText(_translate("SalesManagement", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:700;\">BoughtBill</span></p></body></html>"))
         self.SmLabel.setText(_translate("SalesManagement", "<html><head/><body><p align=\"center\"><span style=\" font-weight:700; color:#e2e2a8;\">Sales Management</span></p></body></html>"))
         self.UpdatePB.setText(_translate("SalesManagement", "Update"))
+        self.HiddenVal.setText(_translate("SalesManagement", "TextLabel"))
 
 
 if __name__ == "__main__":

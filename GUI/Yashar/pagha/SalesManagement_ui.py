@@ -126,7 +126,21 @@ class Ui_SalesManagement(object):
 "color: rgb(255, 255, 255);\n"
 "border:2px;\n"
 "border-radius:20px;")
+        self.HiddenVal = QLabel(self.centralwidget)
+        self.HiddenVal.setObjectName(u"HiddenVal")
+        self.HiddenVal.setGeometry(QRect(340, 150, 49, 16))
         SalesManagement.setCentralWidget(self.centralwidget)
+        self.listView.raise_()
+        self.SaleLineEdit.raise_()
+        self.SaleLabel.raise_()
+        self.BuyLabel.raise_()
+        self.SmLabel.raise_()
+        self.BuyLineEdit.raise_()
+        self.AddButton.raise_()
+        self.BackButton.raise_()
+        self.UpdatePB.raise_()
+        self.HiddenVal.raise_()
+        self.TableWidget.raise_()
         self.menubar = QMenuBar(SalesManagement)
         self.menubar.setObjectName(u"menubar")
         self.menubar.setGeometry(QRect(0, 0, 583, 22))
@@ -156,5 +170,6 @@ class Ui_SalesManagement(object):
         self.AddButton.setText("")
         self.BackButton.setText("")
         self.UpdatePB.setText(QCoreApplication.translate("SalesManagement", u"Update", None))
+        self.HiddenVal.setText(QCoreApplication.translate("SalesManagement", u"TextLabel", None))
     # retranslateUi
 

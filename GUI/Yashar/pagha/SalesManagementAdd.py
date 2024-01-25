@@ -10,6 +10,7 @@ class SalesManagementAdd:
         self.model = Model()
 
 
+
     def renderSales(self):
         self.ui.TableWidget.setRowCount(0)
         SalesTable = self.model.restore("select ProductID, SoldBill, PurchasedBill from salesmanagement")
@@ -31,11 +32,11 @@ class SalesManagementAdd:
                 lastRowIndex, 1, QtWidgets.QTableWidgetItem(str(std[2]))
             )
            
-            # self.ui.TableWidget.setCellWidget(lastRowIndex, 2, deletePB)
-            # self.ui.TableWidget.setCellWidget(lastRowIndex, 3, editPB)
+            self.ui.TableWidget.setCellWidget(lastRowIndex, 3, deletePB)
+            self.ui.TableWidget.setCellWidget(lastRowIndex, 2, editPB)
 
-            # deletePB.clicked.connect(lambda *args, id=std[0]: self.deleteStd(id))
-            # editPB.clicked.connect(lambda *args, stdObj=std: self.editStd(stdObj))
+            deletePB.clicked.connect(lambda *args, id=std[0]: self.deleteProduct(id))
+            editPB.clicked.connect(lambda *args, stdObj=std: self.editProduct(stdObj))
 
     def addProduct(self):
         Sold = self.ui.SaleLineEdit.text()
@@ -54,28 +55,28 @@ class SalesManagementAdd:
         self.ui.BuyLineEdit.setText("")
 
     def deleteProduct(self, id):
-        self.model.store("delete from ProductID where id = " + str(id))
+        self.model.store("delete from salesmanagement where ProductID = " + str(id))
         self.renderSales()
 
     def editProduct(self, std):
-        self.ui.hiddenValue.setText(str(std[0]))
+        self.ui.HiddenVal.setText(str(std[0]))
         self.ui.SaleLineEdit.setText(std[1])
         self.ui.BuyLineEdit.setText(std[2])
 
-        self.ui.addPB.hide()
-        self.ui.updatePB.show()
+        self.ui.AddButton.hide()
+        self.ui.UpdatePB.show()
 
     def updateProduct(self):
         name = self.ui.SaleLineEdit.text()
         lastName = self.ui.BuyLineEdit.text()
-        index = int(self.ui.hiddenValue.text())
+        index = int(self.ui.HiddenVal.text())
 
         self.model.store(
-            "update students set name= '"
+            "update salesmanagement set SoldBill= '"
             + name
-            + "', lastName = '"
+            + "', PurchasedBill = '"
             + lastName
-            + "' where id = "
+            + "' where ProductID = "
             + str(index)
         )
 
