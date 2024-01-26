@@ -32,7 +32,7 @@ class Ui_MainWindow(object):
         self.SmPB.setGeometry(QtCore.QRect(230, 80, 111, 121))
         self.SmPB.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("./Images-Icons/icons8-management-80.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("./Images-Icons/icons8-management-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.SmPB.setIcon(icon1)
         self.SmPB.setIconSize(QtCore.QSize(200, 200))
         self.SmPB.setObjectName("SmPB")

@@ -72,6 +72,7 @@ class Ui_LoginPage(object):
         self.PassLineEdit.setObjectName(u"PassLineEdit")
         self.PassLineEdit.setGeometry(QRect(60, 280, 261, 31))
         self.PassLineEdit.setStyleSheet(u"background-color: rgb(190, 190, 142);")
+        self.PassLineEdit.setEchoMode(QLineEdit.Password)
         self.ErrorLabel = QLabel(self.centralwidget)
         self.ErrorLabel.setObjectName(u"ErrorLabel")
         self.ErrorLabel.setGeometry(QRect(118, 40, 141, 20))

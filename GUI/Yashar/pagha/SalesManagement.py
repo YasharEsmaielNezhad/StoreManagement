@@ -106,7 +106,7 @@ class Ui_SalesManagement(object):
         self.BackButton.setGeometry(QtCore.QRect(10, 0, 51, 51))
         self.BackButton.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("../StoreManagement/Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("./Images-Icons/icons8-back-arrow-100.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.BackButton.setIcon(icon1)
         self.BackButton.setIconSize(QtCore.QSize(35, 35))
         self.BackButton.setObjectName("BackButton")

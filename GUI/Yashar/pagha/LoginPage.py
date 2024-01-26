@@ -66,6 +66,7 @@ class Ui_LoginPage(object):
         self.PassLineEdit.setGeometry(QtCore.QRect(60, 280, 261, 31))
         self.PassLineEdit.setStyleSheet("background-color: rgb(190, 190, 142);")
         self.PassLineEdit.setText("")
+        self.PassLineEdit.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
         self.PassLineEdit.setObjectName("PassLineEdit")
         self.ErrorLabel = QtWidgets.QLabel(parent=self.centralwidget)
         self.ErrorLabel.setGeometry(QtCore.QRect(118, 40, 141, 20))
@@ -85,6 +86,16 @@ class Ui_LoginPage(object):
 
     def retranslateUi(self, LoginPage):
         _translate = QtCore.QCoreApplication.translate
-        LoginPage.setWindowTitle(_translate("LoginPage", "LoginPage"))
+        LoginPage.setWindowTitle(_translate("LoginPage", "StoreManagement"))
         self.labelUn.setText(_translate("LoginPage", "<html><head/><body><p align=\"center\">Username</p></body></html>"))
         self.labelPass.setText(_translate("LoginPage", "<html><head/><body><p align=\"center\">Password</p></body></html>"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    LoginPage = QtWidgets.QMainWindow()
+    ui = Ui_LoginPage()
+    ui.setupUi(LoginPage)
+    LoginPage.show()
+    sys.exit(app.exec())
